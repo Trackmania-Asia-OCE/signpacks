@@ -1,9 +1,7 @@
 import chalk from 'chalk';
-import fileUrl from 'file-url';
 import fs from 'fs';
 import ora from 'ora';
 import path from 'path';
-import { rimraf } from 'rimraf';
 import { getFiles, toSecond } from './utils.js';
 
 const BASE_URL = 'https://trackmania-asia-oce.github.io/signpacks';
