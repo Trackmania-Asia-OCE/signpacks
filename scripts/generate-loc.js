@@ -13,10 +13,9 @@ async function main() {
   const spinner = ora(`${chalk.yellowBright('Generating new .loc files...')}`).start();
 
   getFiles(path.resolve(process.cwd(), 'public')).then(files => {
-    const parsedFiles = files.map(path.parse);
-    const filteredFiles = parsedFiles.filter(file => file.ext !== '.loc');
+    const parsedFiles = files.map(path.parse).filter(file => file.ext !== '.loc');
 
-    filteredFiles.forEach(file => {
+    parsedFiles.forEach(file => {
       const relativePath = path
         .relative(process.cwd(), path.resolve(file.dir, file.base))
         .split('\\')
