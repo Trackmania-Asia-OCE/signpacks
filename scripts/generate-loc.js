@@ -13,11 +13,17 @@ async function main() {
   const spinner = ora(`${chalk.yellowBright('Generating new .loc files...')}`).start();
 
   getFiles(path.resolve(process.cwd(), 'public')).then(files => {
-    files.forEach(file => {
-      const relativePath = path.relative(process.cwd(), file).split('\\').join('/');
-      const parsedFile = path.parse(file);
+    const parsedFiles = files.map(path.parse);
+    const filteredFiles = parsedFiles.filter(file => file.ext !== '.loc');
+
+    filteredFiles.forEach(file => {
+      const relativePath = path
+        .relative(process.cwd(), path.resolve(file.dir, file.base))
+        .split('\\')
+        .join('/');
+
       fs.writeFileSync(
-        path.resolve(parsedFile.dir, `${parsedFile.name}.loc`),
+        path.resolve(file.dir, `${file.name}.loc`),
         relativePath.replace('public/', `${BASE_URL}/`)
       );
     });

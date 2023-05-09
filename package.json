@@ -10,7 +10,7 @@
   "private": true,
   "scripts": {
     "delete-loc": "rimraf --glob public/**/*.loc",
-    "generate-loc": "rimraf --glob public/**/*.loc && node scripts/generate-loc.js"
+    "generate-loc": "node scripts/generate-loc.js"
   },
   "devDependencies": {
     "prettier": "^2.8.8"
