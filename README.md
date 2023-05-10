@@ -4,7 +4,7 @@ This page contains all sign packs used for Trackmania Asia/OCE mapping projects.
 
 ## Download
 
-All our signpacks are available for download from the [releases page](releases).
+All our signpacks are available for download from the [releases page](https://github.com/Trackmania-Asia-OCE/signpacks/releases).
 
 ## Installation
 
