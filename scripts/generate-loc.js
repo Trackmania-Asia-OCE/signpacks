@@ -20,7 +20,7 @@ async function main() {
         .join('/');
 
       fs.writeFileSync(
-        path.resolve(file.dir, `${file.name}.loc`),
+        path.resolve(file.dir, `${file.base}.loc`),
         relativePath.replace('public/', `${BASE_URL}/`)
       );
     });
