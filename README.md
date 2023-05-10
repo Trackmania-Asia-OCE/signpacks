@@ -13,3 +13,9 @@ To install these signpacks for use in the Trackmania map editor, unzip the signp
 ```
 C:\Users\<user>\Documents\Trackmania2020\Skins\Any
 ```
+
+## License
+
+The [script](scripts/generate-loc.js) used to generate the locator files is available under [a public domain licence](LICENSE).
+
+The signs are available under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Licence](https://creativecommons.org/licenses/by-nc-sa/4.0/). See also [this file](LICENSE_SIGNS) for the complete licence text.
