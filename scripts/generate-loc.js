@@ -4,9 +4,15 @@ import ora from 'ora';
 import path from 'path';
 import { getFiles, toSecond } from './utils.js';
 
+// Modify this with your host location.
 const BASE_URL = 'https://trackmania-asia-oce.github.io/signpacks';
 
-async function main() {
+/**
+ * Run the program.
+ *
+ * @param {string} baseUrl The base URL of the host.
+ */
+async function main(baseUrl) {
   const start = process.hrtime();
   const spinner = ora(`${chalk.yellowBright('Generating new .loc files...')}`).start();
 
@@ -21,7 +27,7 @@ async function main() {
 
       fs.writeFileSync(
         path.resolve(file.dir, `${file.base}.loc`),
-        relativePath.replace('public/', `${BASE_URL}/`)
+        relativePath.replace('public/', `${baseUrl}/`)
       );
     });
 
@@ -30,6 +36,6 @@ async function main() {
   });
 }
 
-main().catch(err => {
+main(BASE_URL).catch(err => {
   console.error(err);
 });
