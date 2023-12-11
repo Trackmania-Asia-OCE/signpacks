@@ -1,6 +1,5 @@
 # Built files
 dist/
-*.zip
 
 # =========================
 # Node.js-Specific Ignores
