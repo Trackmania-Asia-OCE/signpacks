@@ -8,7 +8,7 @@
 - Practiceless: https://tmao-assets.netlify.app/aopl-2024-assets/LOGO_NOHRS.png
 - PIWO Bedge: https://tmao-assets.netlify.app/aopl-2024-assets/LOGO_PIWO.png
 - Restless: https://tmao-assets.netlify.app/aopl-2024-assets/LOGO_REST.png
-- Steak & Cheese: https://tmao-assets.netlify.app/aopl-2024-assetsLOGO_SC.png
+- Steak & Cheese: https://tmao-assets.netlify.app/aopl-2024-assets/LOGO_SC.png
 - Synchro: https://tmao-assets.netlify.app/aopl-2024-assets/LOGO_ANTIC.png
 - Trident Esports + Trident Storm: https://tmao-assets.netlify.app/aopl-2024-assets/LOGO_TRDNT_ALT.png
 - YEPBANANA: https://tmao-assets.netlify.app/aopl-2024-assets/LOGO_YEPBN.png
